@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>659</width>
+    <height>264</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTextBrowser" name="textBrowser_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>631</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;软件说明：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;该软件设计于预测某一或多地点的大气污染物浓度，预测需要两个数据集，&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1：一个是训练数据：用以结合待预测站点数据来构造一个逆距离加权PM2.5/PM10变量，以及做线性回归分析，训练数据集必须包括以下变量：'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;lon&lt;/span&gt;'&lt;span style=&quot; font-style:italic;&quot;&gt;,&lt;/span&gt;'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;lat&lt;/span&gt;'&lt;span style=&quot; font-style:italic;&quot;&gt;,&lt;/span&gt;'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;PM2.5/PM10&lt;/span&gt;'&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2：待预测站点数据：被预测污染物浓度的地点变量数据集，必须包含以下变量：&lt;span style=&quot; font-style:italic;&quot;&gt;'&lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;pm25_camq&lt;/span&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;','&lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;pm10_camq&lt;/span&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;','&lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;PRES&lt;/span&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;'，'&lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;TEMP&lt;/span&gt;','&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;DEWP&lt;/span&gt;',   '&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;HUMI&lt;/span&gt;','&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;IRAIN&lt;/span&gt;','&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;NE_Iws&lt;/span&gt;','&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;SE_Iws&lt;/span&gt;','&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;cbwd&lt;/span&gt;','&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;season&lt;/span&gt;'&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;本软件的预测模型是提前训练好的模型，有线性模型、xgboost。界面1进行所需文件的读取，以及结果的保存；界面2是模型预测，是用训练好的模型对待预测地点进行预测。&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;数据说明：&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;训练和预测数据里需要有如下变量：&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;'&lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;PRES&lt;/span&gt;'(气压),&lt;span style=&quot; font-style:italic;&quot;&gt;'&lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;TEMP&lt;/span&gt;'(温度),'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;DEWP&lt;/span&gt;'(露点温度),'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;HUMI&lt;/span&gt;'(湿度),'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;IRAIN&lt;/span&gt;'(降雨量),'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;pm25_camq&lt;/span&gt;'(camq输出PM2.5),'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;pm10_camq&lt;/span&gt;'(camq输出PM10),'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;cbwd&lt;/span&gt;'()&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;NE_Iws&lt;/span&gt;'(NE累计风向下累计风速的日均值),&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;SE_Iws&lt;/span&gt;'(SE累计风向下累计风速的日均值),&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;lon&lt;/span&gt;'(经度),'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;lat&lt;/span&gt;'(纬度),'&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;season&lt;/span&gt;'(季节)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

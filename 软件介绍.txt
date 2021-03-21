@@ -1,0 +1,8 @@
+软件使用说明：
+1.打开ourmodel.py,将最后的
+data1 = pd.read_csv(r"E:\\app\\66station_2015-12-21.csv")
+data2 = pd.read_csv(r"E:\\app\\12787site_2class_2015-12-21.csv")
+进行替换,路径写app文件的保存路径
+2.运行app业务.py
+在文件操作界面，依次单击“导入训练数据文件”、“导入带预测站点数据”、“保存文件地址”按钮，分别导入66station_2015-12-21.csv（pm10_66station_2015-12-21.csv）、12787site_2class_2015-12-21.csv、test.csv。
+在模型预测界面，点击PM2.5/PM10
